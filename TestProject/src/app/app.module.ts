@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
+import { DenemeComponent } from './deneme/deneme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    DenemeComponent
   ],
   imports: [
     BrowserModule,

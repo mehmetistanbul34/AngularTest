@@ -1,0 +1,49 @@
+.dv {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    overflow: auto;
+    max-width: 300px;
+}
+
+.div1{
+    background: red;
+    grid-area: A;
+}
+
+.div2{
+    background: green;
+    grid-area: B;
+}
+
+.div3{
+    background: yellow;
+    grid-area: C;
+}
+
+.div4{
+    background: grey;
+    grid-area: D;
+}
+
+.div5{
+    background: pink;
+    grid-area: E;
+}
+
+
+.div6{
+    background: aqua;
+    grid-area: F;
+}
+
+.ana-div {
+    display: grid;
+    grid-template:  200px 200px / repeat(3,250px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin: 20px;
+    grid-template-areas:
+        "C B A"
+        "D E F" 
+}
