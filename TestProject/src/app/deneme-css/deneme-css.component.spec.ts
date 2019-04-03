@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DenemeComponent } from './deneme.component';
+import { DenemeCssComponent } from './deneme-css.component';
 
-describe('DenemeComponent', () => {
-  let component: DenemeComponent;
-  let fixture: ComponentFixture<DenemeComponent>;
+describe('DenemeCssComponent', () => {
+  let component: DenemeCssComponent;
+  let fixture: ComponentFixture<DenemeCssComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DenemeComponent ]
+      declarations: [ DenemeCssComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DenemeComponent);
+    fixture = TestBed.createComponent(DenemeCssComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

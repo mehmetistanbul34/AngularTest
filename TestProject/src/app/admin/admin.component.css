@@ -1,31 +1,40 @@
-div.ust {
-    height: 100px;
-    width: 1325px;
-    background: red;
-    overflow: auto;
-  }
+div.sayfa {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 0, 0, 1);
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  overflow: auto;
+  grid-template: repeat(2,200px) / repeat(2,300px);
+  grid-template-areas: 
+    "C A"
+    "B D";
+  border-radius: 345px;
+  align-content: center;
 
-  div.sol {
-    height: 100px;
-    float: left;
-    width: 660px;
-    background: yellow;
-    overflow: auto;
-    line-height: 75px;
-    text-align: center;
-  }
-
-  div.sag {
-    height: 100px;
-    float: right;
-    width: 665px;
-    background: green;
-    overflow: auto;
-  }
-
-  #alt {
-    overflow: auto;
-    height: 100px;
-    width: 1325px;
-    background: black;
-  }
+}
+div.kutular {
+  text-align: center;
+  text-decoration-line: line-through;
+  border-radius: 45px;
+  /*all: inherit;*/
+  font-size: 25px;
+}
+div.kutu1 {
+  background: green;
+  grid-area: A;
+}
+div.kutu2 {
+  background: pink;
+  grid-area: B;
+}
+div.kutu3 {
+  background: black;
+  grid-area: C;
+}
+div.kutu4 {
+  background: grey;
+  grid-area: D;
+}

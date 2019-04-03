@@ -1,0 +1,102 @@
+div.kutular:hover div.kt {
+    transform: skewY(50deg) rotate(360deg) scale(2) translateY(150px);
+    /* transformlar :
+    X'ten Y2ye doğru kaydeırmak için ----> transform: translate(100px,100px); 
+    Y'e doğru kaydeırmak için ----> transform: translateY(50px);
+    
+    Belirlenen oranda büyümeleri için ---> transform: scale(2);
+    X yönde büyümeleri için ---> transform: scaleX(2);
+    Y yönde büyümeleri için ---> transform: scaleY(2);
+
+    İstenilen açıda (sağ = + , sol = -) döndermek --> transform: rotate(360deg);
+
+    yamulmak için --> transform: skewX(50deg);
+    */
+
+    transition: 3s;     /*İşlemin biliş süresi*/
+}
+
+.kutu {
+    width: 500px;
+    height: 300px;
+    margin: 15px;
+    overflow: auto;
+    float: left;
+
+    border: 10px solid black;
+    /*
+    border-bottom-width: 50px;
+    border-top-width: 50px;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-style: dashed dotted double groove hidden inherit . . .
+    border-top-style: dotted;
+    border-bottom-style: double;
+    border-left-style: dashed;
+    border-right-style: ridge;
+    border-top-color: aqua;
+    border-bottom-color: black;
+    border-left-color: yellow;
+    border-right-color: blue;
+    */
+
+    border-radius: 5px;
+    /* bir üstteki satırla eşdeğerdir
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    */ 
+}
+.kutular {
+    width: 400px;
+    height: 400px;
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: row;    /*Satırda sırala*/ 
+    justify-content: center; /*Satorda ortalar*/
+    align-items: center; /*Sütunda ortalar*/
+}
+.kt {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    /* float:left;  left; Satırda . sola yatırmayı bitirmek için clear : left;*/
+}
+.newcolumn {
+    clear: left;
+}
+.kutu1 {
+    /*top: 80px;
+    left: 45px;*/
+    background: green;
+}
+.kutu2 {
+   /* top: 50px;
+    left: 30px;*/
+    background: yellow;
+}
+.kutu3 {
+    /*top: 15px;
+    left: 15px;*/
+    background: red;
+}
+.renklikutu {
+    height: 150px;
+    width: 350px;
+    background: radial-gradient(green,red,yellow);
+
+    /* 
+    Açı vererekte daha eğimli geçişler elde edebiliriz 
+    -----> background:linear-gradient(45deg,green,red,yellow);
+    Alttan Üste geçişler
+    -----> background:linear-gradient(to bottom right,green,red,yellow);
+    Tekrar eden geçişler
+    -----> background: repeating-linear-gradient(green, red 20px, yellow 50px);
+    Merkezden yapılan geçişler
+    -----> background: radial-gradient(green,red,yellow);
+    */
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+}
